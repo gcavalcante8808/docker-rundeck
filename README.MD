@@ -19,8 +19,8 @@ Basic (localhost)
 ```
     docker run \
     -d \
-    -p 4440:4440
-    --hostname localhost
+    -p 4440:4440 \
+    --hostname localhost \
     gcavalcante8808/rundeck
 ```
 
@@ -30,9 +30,9 @@ With jwilder/nginxProxy (jwilder in front as reverse proxy)
 ```
     docker run \
     -d \
-    -e VIRTUAL_HOST=rundeck.example.com
-    -e VIRTUAL_PORT=4440
-    --hostname rundeck.example.com
+    -e VIRTUAL_HOST=rundeck.example.com \
+    -e VIRTUAL_PORT=4440 \
+    --hostname rundeck.example.com \
     gcavalcante8808/rundeck
 ```
 
